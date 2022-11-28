@@ -1,11 +1,10 @@
 'use strict';
 
-let bill = 275;
-let tip = 0.15;
-
 function billSentence (bill) {
-    (50 <= bill <= 300) ? tip = 0.15 * bill : tip = 0.20 * bill;
+
+    let tip = 0;
     let total = bill + tip;
+    (50 <= bill <= 300) ? tip = 0.15 * bill : tip = 0.20 * bill;
 
     return "La note était de " + bill + ", le pourboire de " + tip + " et la valeur totale de " + total; 
 }
