@@ -8,7 +8,7 @@ const hiddenMessage = ["X", "X", "X", "X", "W", "X", "E",  "X", "X", "X", "X", "
 function showMessage1 (array) {
     let message = [];
     
-    for(let i=0; i<array.length; i++){
+    for (let i=0; i<array.length; i++) {
         if (array[i] !== "X") {
             message.push(array[i]);
         }
@@ -28,7 +28,7 @@ const hiddenCodeArray = hiddenCode.split('');
 function showMessage2 (array) {
     let message = [];
     
-    for(let i=0; i<array.length; i++){
+    for (let i=0; i<array.length; i++) {
         if (array[i] !== "X" && array[i]%2 !== 0) {
             message.push(array[i]);
         }
